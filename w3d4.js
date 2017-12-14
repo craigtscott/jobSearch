@@ -19,7 +19,9 @@ function printJson(data, output, bool) {
         }
         line = line + "|-" + data[i].name + "\n";
       }
+
       output = output + line;
+
       if (data[0].children){
         output = output + line + printJson(data[i].children, output, bool);
       } else {
@@ -42,27 +44,27 @@ var files = [{
     children: [
       {
         type: "folder",
-        name: "cat",
-        path: "/animals/cat",
+        name: "dog",
+        path: "/animals/dog",
         children: [
           {
             type: "folder",
             name: "images",
-            path: "/animals/cat/images",
+            path: "/animals/dog/images",
             children: [
               {
                 type: "file",
-                name: "cat001.jpg",
-                path: "/animals/cat/images/cat001.jpg"
+                name: "dog001.jpg",
+                path: "/animals/dog/images/dog001.jpg"
               }, {
                 type: "file",
-                name: "cat001.jpg",
-                path: "/animals/cat/images/cat002.jpg"
+                name: "dog001.jpg",
+                path: "/animals/dog/images/dog002.jpg"
               }
             ]
           }
         ]
-      },
+      }
     ]
   }
 ];
