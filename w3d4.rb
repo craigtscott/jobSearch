@@ -69,4 +69,4 @@ var files = [{
   }
 ];
 
-printJson(files);
+// printJson(files);
